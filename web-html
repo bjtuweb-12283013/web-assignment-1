@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Web程序设计</title>
+    <link rel="stylesheet" href="/web-programming/stylesheets/styles.css">
+    <link rel="stylesheet" href="/web-programming/stylesheets/pygment_trac.css">
+    <script src="/web-programming/javascripts/jquery.min.js"></script>
+    <script src="/web-programming/javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="/web-programming/stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1><a href="/web-programming/">web程序设计</a></h1>
+          <p>2014, 北京交通大学</p>
+          <hr>
+          <span class="credits left">by 武言博</span>
+          <span class="credits right">Hosted on GitHub Pages</span>
+        </div>
+
+        <p>
+          本课程讲授web应用开发中所需要的主要技术和知识，包括静态和动态内容生成、n层应用架构、移动开发和云计算。同时，我们将共同探讨web应用的设计原则，尤其是系统安全性和可扩展性。
+        </p>
+        <p>
+          与本课程有关的重要资料：
+            <a href="/web-programming/handouts/">讲义下载</a> 
+            <a href="/web-programming/assignments/">作业题目</a> 
+            <a href="/web-programming/evaluation/">评价标准</a>
+        </p>
+        
+        <p>
+            授课组联系信息：
+            武言博, <a href="mailto:ybwu@bjtu.edu.cn">ybwu@bjtu.edu.cn</a>
+        </p>
+        <hr>
+        <footer>2014 北京交通大学 版权所有</footer>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
