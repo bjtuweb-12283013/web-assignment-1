@@ -1,0 +1,862 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!-- script src="http://202.112.154.32/cms/web/writeLog.jsp?channelID=4"></script -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+	<link href="css/siyuanblue_style.css" rel="stylesheet" type="text/css" />
+	<title>首页_北京交通大学</title>
+	
+<script type="text/javascript"> 
+function displaySubMenu(li) { 
+var subMenu = li.getElementsByTagName("div")[0]; 
+subMenu.style.display = "block"; 
+} 
+function hideSubMenu(li) { 
+var subMenu = li.getElementsByTagName("div")[0]; 
+subMenu.style.display = "none"; 
+} 
+
+function trans(){
+    var uid = document.form1.uid.value; 
+    var pass = document.form1.pass.value; 
+	if(uid == ""){
+            alert("用户名不能为空");
+            return false;
+	}
+
+        if (uid.substring(0,4) == 'fang'){
+	    document.form1.action="http://mis.njtu.edu.cn/htmls/bg/gg/ggzldl.jsp";
+	    document.form1.submit();
+            return true;
+	}
+
+        if(uid.length<=7 || uid.substring(0,2) == "98" || uid.substring(0,2) == "97" ||uid.substring(2,5)=="984" ){
+		document.form1.password.value=pass;
+		document.form1.loginname.value=uid;
+		document.form1.action="http://pymis.njtu.edu.cn/auth/login/";
+		document.form1.submit();
+                return true;
+        }
+
+        if(uid.length>7 && uid.substring(2,3) == "1"  ){
+		document.form1.password.value=pass;
+		document.form1.loginname.value=uid;
+		document.form1.action="http://pymis.njtu.edu.cn/auth/login/";
+	        document.form1.submit();
+                return true;
+	}else{
+	        document.form1.action="http://smis.bjtu.edu.cn/std_Verify.jsp";
+                document.form1.submit();
+                return true;
+        }
+}       
+
+</script>
+
+</head>
+<body>
+
+
+	<div class="header">
+		<div class="banner">
+			<a href="http://en.njtu.edu.cn/" target="_blank">English</a>
+		</div>
+		<div class="whole" style="position:relative;">
+			<div class="nav" style="z-index:9999; position: relative;">
+			<ul>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>学校概况</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="xxgk/xxjj/index.htm" target="_blank">学校简介</a>
+							</li>
+														<li>
+								<a href="xxgk/gljg/index.htm" target="_blank">管理机构</a>
+							</li>
+														<li>
+								<a href="xxgk/xrld/index.htm" target="_blank">现任领导</a>
+							</li>
+														<li>
+								<a href="xxgk/lsyg/index.htm" target="_blank">历史沿革</a>
+							</li>
+														<li>
+								<a href="xxgk/ldtc/index.htm" target="_blank">领导题词</a>
+							</li>
+														<li>
+								<a href="xxgk/xydt/index.htm" target="_blank">校园地图</a>
+							</li>
+														<li>
+								<a href="xxgk/dxqpmt/index.htm" target="_blank">东校区平面图</a>
+							</li>
+														<li>
+								<a href="xxgk/jbsj/index.htm" target="_blank">基本数据</a>
+							</li>
+														<li>
+								<a href="http://zsw.njtu.edu.cn/XXGK/Default.aspx?type=图画校园" target="_blank">校园风光</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>教学培养</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://jwc.bjtu.edu.cn" target="_blank">本科生</a>
+							</li>
+														<li>
+								<a href="http://gs.njtu.edu.cn/" target="_blank">研究生</a>
+							</li>
+														<li>
+								<a href="http://dis.njtu.edu.cn/" target="_blank">成人教育</a>
+							</li>
+														<li>
+								<a href="http://dis.njtu.edu.cn/" target="_blank">网络教育</a>
+							</li>
+														<li>
+								<a href="http://cie.bjtu.edu.cn" target="_blank">留学生</a>
+							</li>
+														<li>
+								<a href="jypy/xfjs/index.htm" target="_blank">学风建设</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>科学研究</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://202.205.99.152:8080/equipment/" target="_blank">实验室建设</a>
+							</li>
+														<li>
+								<a href="http://kjc.njtu.edu.cn/" target="_blank">学术活动</a>
+							</li>
+														<li>
+								<a href="http://jdxb.bjtu.edu.cn/index.html" target="_blank">交大学报（自）</a>
+							</li>
+														<li>
+								<a href="http://kjc.bjtu.edu.cn:801/home.htm" target="_blank">交大学报社会科学版</a>
+							</li>
+														<li>
+								<a href="http://kjc.njtu.edu.cn/" target="_blank">科技成果</a>
+							</li>
+														<li>
+								<a href="http://kjc.njtu.edu.cn/" target="_blank">论文检索</a>
+							</li>
+														<li>
+								<a href="http://www.urt.cn/" target="_blank">《都市快轨交通》杂志社</a>
+							</li>
+														<li>
+								<a href="http://rtlab.bjtu.edu.cn/" target="_blank">轨道交通控制与安全国家重点实验室</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>学科师资</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://gs.bjtu.edu.cn" target="_blank">学科建设</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/personnel/alldirect.asp?style=%CA%A6%D7%CA%C1%A6%C1%BF" target="_blank">两院院士</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/personnel/alldirect.asp?style=%CA%A6%D7%CA%C1%A6%C1%BF" target="_blank">长江学者</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/personnel/alldirect.asp?style=%CA%A6%D7%CA%C1%A6%C1%BF" target="_blank">教授</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/personnel/list.asp?BigClassName=重点学科" target="_blank">重点学科</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/job/job_index.asp" target="_blank">人才招聘</a>
+							</li>
+														<li>
+								<a href="http://jgrsc.bjtu.edu.cn/postDoctoral/postDoctoral_index.asp" target="_blank">博士后流动站</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>招生就业</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://zsw.njtu.edu.cn/" target="_blank">本科生招生</a>
+							</li>
+														<li>
+								<a href="http://gs.njtu.edu.cn/" target="_blank">研究生招生</a>
+							</li>
+														<li>
+								<a href="http://cie.bjtu.edu.cn/" target="_blank">来华留学生招生</a>
+							</li>
+														<li>
+								<a href="http://cie.bjtu.edu.cn/" target="_blank">海外项目招生（在校生）</a>
+							</li>
+														<li>
+								<a href="http://dis.njtu.edu.cn/" target="_blank">成人教育招生</a>
+							</li>
+														<li>
+								<a href="http://dis.njtu.edu.cn/" target="_blank">网络教育招生</a>
+							</li>
+														<li>
+								<a href="http://www.bjtu-hedu.com/" target="_blank">国际项目招生（留学）</a>
+							</li>
+														<li>
+								<a href="http://job.njtu.edu.cn/" target="_blank">本科生就业</a>
+							</li>
+														<li>
+								<a href="http://job.njtu.edu.cn/" target="_blank">研究生就业</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>学生天地</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://jgxsc.njtu.edu.cn/" target="_blank">学生处.武装部</a>
+							</li>
+														<li>
+								<a href="http://soft.psy.com.cn/2009/bjtu/" target="_blank">学生心理素质教育中心</a>
+							</li>
+														<li>
+								<a href="http://202.112.154.27/pub/xyzdzx/" target="_blank">学业发展指导中心</a>
+							</li>
+														<li>
+								<a href="http://www.bfusc.org.cn/" target="_blank">大学生羽毛球协会</a>
+							</li>
+														<li>
+								<a href="http://202.112.154.27/pub/zzzx/" target="_blank">学生资助管理中心</a>
+							</li>
+														<li>
+								<a href="http://youth.bjtu.edu.cn/test.php" target="_blank">交大青年</a>
+							</li>
+														<li>
+								<a href="http://202.112.159.233/union/" target="_blank">学生社团</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>信息资源</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://lib.njtu.edu.cn/" target="_blank">图书馆</a>
+							</li>
+														<li>
+								<a href="http://202.112.159.132:8080/" target="_blank">档案馆</a>
+							</li>
+														<li>
+								<a href="http://press.njtu.edu.cn/" target="_blank">出版社</a>
+							</li>
+														<li>
+								<a href="http://ic.njtu.edu.cn/" target="_blank">信息中心</a>
+							</li>
+														<li>
+								<a href="http://news.njtu.edu.cn/" target="_blank">校园新闻网</a>
+							</li>
+														<li>
+								<a href="http://portal.bjtu.edu.cn/" target="_blank">管理信息系统</a>
+							</li>
+														<li>
+								<a href="http://ecard.bjtu.edu.cn/" target="_blank">一卡通自助服务</a>
+							</li>
+														<li>
+								<a href="http://zhixing.bjtu.edu.cn/forum.php" target="_blank">知行信息交流平台</a>
+							</li>
+														<li>
+								<a href="http://dbxb.njtu.edu.cn/school/list.html" target="_blank">校务公开</a>
+							</li>
+														<li>
+								<a href="mailto:sjxzxx@bjtu.edu.cn" target="_blank">书记校长信箱</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>院系设置</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://eaie.bjtu.edu.cn/" target="_blank">电子信息工程学院</a>
+							</li>
+														<li>
+								<a href="http://computer.bjtu.edu.cn/" target="_blank">计算机与信息技术学院</a>
+							</li>
+														<li>
+								<a href="http://sem.bjtu.edu.cn/" target="_blank">经济管理学院</a>
+							</li>
+														<li>
+								<a href="http://trans.bjtu.edu.cn/" target="_blank">交通运输学院</a>
+							</li>
+														<li>
+								<a href="http://civil.bjtu.edu.cn/index.asp" target="_blank">土木建筑工程学院</a>
+							</li>
+														<li>
+								<a href="http://mece.njtu.edu.cn/" target="_blank">机械与电子控制工程学院</a>
+							</li>
+														<li>
+								<a href="http://ee.bjtu.edu.cn" target="_blank">电气工程学院</a>
+							</li>
+														<li>
+								<a href="http://sci.bjtu.edu.cn" target="_blank">理学院</a>
+							</li>
+														<li>
+								<a href="http://rwshkxxy.njtu.edu.cn/" target="_blank">人文社会科学学院</a>
+							</li>
+														<li>
+								<a href="http://yyxy.bjtu.edu.cn/" target="_blank">语言与传播学院</a>
+							</li>
+														<li>
+								<a href="http://mkszyxy.bjtu.edu.cn/index" target="_blank">马克思主义学院</a>
+							</li>
+														<li>
+								<a href="http://rjxy.bjtu.edu.cn/" target="_blank">软件学院</a>
+							</li>
+														<li>
+								<a href="http://aad.bjtu.edu.cn" target="_blank">建筑与艺术学院</a>
+							</li>
+														<li>
+								<a href="http://dis.bjtu.edu.cn/" target="_blank">远程与继续教育学院</a>
+							</li>
+														<li>
+								<a href="http://law.bjtu.edu.cn" target="_blank">法学院</a>
+							</li>
+														<li>
+								<a href="http://www.bjtuhbxy.cn/" target="_blank">海滨学院</a>
+							</li>
+														<li>
+								<a href="http://www.bjtu-sz.com/" target="_blank">深圳研究院</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+								<li onmouseover="displaySubMenu(this)" onmouseout="hideSubMenu(this)">
+					<a>合作交流</a>|
+					<div class="subnav" style="display:none;">
+						<ol>
+														<li>
+								<a href="http://intl.bjtu.edu.cn/index_cn.htm" target="_blank">国际交流</a>
+							</li>
+														<li>
+								<a href="http://cie.bjtu.edu.cn/" target="_blank">来华留学</a>
+							</li>
+														<li>
+								<a href="http://cie.bjtu.edu.cn/" target="_blank">在校生出国</a>
+							</li>
+														<li>
+								<a href="http://www1.njtu.edu.cn/department/new/index.htm" target="_blank">中欧智能交通培训中心</a>
+							</li>
+														<li>
+								<a href="http://cjsrc.njtu.edu.cn/" target="_blank">交通运输规划与管理长江学者研究中心</a>
+							</li>
+														<li>
+								<a href="http://www.ossc.cn" target="_blank">北京交大留学服务中心</a>
+							</li>
+														<li>
+								<a href="http://www.bjtupx.com/" target="_blank">北京交通大学培训中心</a>
+							</li>
+														<li>
+								<a href="http://www.mysf.org.cn/" target="_blank">茅以升科技教育基金委员会</a>
+							</li>
+														<li>
+								<a href="http://www.unesco-ee.org" target="_blank">联合国教科文组织北京交通大学产学合作教席</a>
+							</li>
+														<li>
+								<a href="http://www.bjtuxyqyj.org/" target="_blank">北京交通大学校友企业联合会网站</a>
+							</li>
+														<li>
+								<a href="http://www.bjtuxqhz.org/dshindex.html" target="_blank">北京交通大学董事会专题网站</a>
+							</li>
+													</ol>
+					</div>
+				</li>
+							</ul>	
+			</div>
+			<div class="fla" style="position:relative;">
+				<img src="images/siyuanblue/fla.jpg" width="904" height="182" />
+			</div>
+			<div class="side">
+				<div class="side01">
+					<h3>专题网站</h3>
+					<ul>
+											<li>
+						<a href="http://news.bjtu.edu.cn/zhongxingongzuo/jiaoyushijianhuodong/ " target="_blank">党的群众路线教育实践活动</a>
+					</li>
+										<li>
+						<a href="http://jgrsc.bjtu.edu.cn/job/job_index.asp" target="_blank">人才招聘网</a>
+					</li>
+										<li>
+						<a href="http://202.205.99.136:8080/DpWeb/dp-web!index.action" target="_blank">十二五规划</a>
+					</li>
+										<li>
+						<a href="http://zsw.njtu.edu.cn/" target="_blank">招生资讯网</a>
+					</li>
+										<li>
+						<a href="http://jwc.bjtu.edu.cn" target="_blank">本科生教学网</a>
+					</li>
+										<li>
+						<a href="http://gs.njtu.edu.cn/" target="_blank">研究生教学网</a>
+					</li>
+										<li>
+						<a href="http://alumni.bjtu.edu.cn/" target="_blank">校友会</a>
+					</li>
+										</ul>
+				</div>
+				<div class="side02">
+					<h3>管理信息系统</h3>
+					<form id="form1" name="form1" method="post">
+				  <ul>
+                    <li> <span>用户名：</span>
+                        <input type="text"name="uid" id="uid" />
+                    </li>
+				    <li style="*margin-top: 5px;"> <span>密  码：</span>
+				        <input type="password" name="pass" type="password" id="pass" onkeypress="javascript:if (event.keyCode==13) trans();" size="15" />
+                    </li>
+				    <li style="width:68px; height:18px; float:right; margin:6px 28px 0 0; _margin-right:18px; display:inline; *margin-top:2px; _margin-top:6px;">
+                      <input type="button" onClick="trans();" value="" name="Input" style="background:none; width:68px; height:18px; cursor:pointer;" />
+                    </li>
+			                <input type="hidden" name="loginname">					
+			                <input type="hidden" name="password">					
+			                <input type="hidden" name="redirect" value="/home/">
+                  </ul>
+				</form>
+				</div>
+			<!--  左侧结束  --></div>
+			<div class="right">
+				<div class="right01">
+					<h3><a href="http://news.bjtu.edu.cn" target="_blank" style="font-size:14px; color:#FFFFFF; font-weight:bold;">校园新闻</a>
+						<form name="dataForm" action="/cms/search/searchResults.jsp" target="_blank" method="post" accept-Charset="utf-8" onsubmit="document.charset='utf-8';">
+                  <input name="siteID" size="4" value="3" type = "hidden">
+						<p>
+							<input type="text" name="query" value="输入您所要查找的关键词" style="width:155px; height:20px; float:left; margin:1px 0; background:none; color: #636363;" />
+							<input type="submit" name="Submit" value="" style="width:40px; height:24px; cursor:pointer; background:none; float:left;" />
+						</p>
+					</form>
+				  </h3>
+					<div class="right01_content">
+						<div class="news">
+							<SCRIPT type=text/javascript>
+									var imgUrl=new Array();
+									var imgLink=new Array();
+									var imgName=new Array();
+									var n=1;
+																											imgUrl[n] = "images/content/2014-02/20140228181552512715.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-28/104363.html";
+									var vTitle='学校召开党的群众路线教育实践活动总结大会';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																								imgUrl[n] = "images/content/2014-02/20140227183314367745.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-27/104360.html";
+									var vTitle='校领导深入一线指导开学工作';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-02/20140227182004647606.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-27/104359.html";
+									var vTitle='教育部学校体育的改革与发展座谈会在我校举行';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-02/20140227181753532505.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/hezuojiaoliu/2014-02-27/104358.html";
+									var vTitle='宁滨会见美国圣托马斯大学教务长陈思齐博士一行';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-02/20140226113915637437.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-26/104349.html";
+									var vTitle='校党委十届三次全会举行';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																						imgUrl[n] = "images/content/2014-02/20140226113402687238.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/hezuojiaoliu/2014-02-25/104342.html";
+									var vTitle='宁滨会见英国信号工程师协会会长David Weedon一行';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																																										imgUrl[n] = "images/content/2014-02/20140224135707325706.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-24/104337.html";
+									var vTitle='我校在北京高校宣传教育工作会议上作交流发言';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																																										imgUrl[n] = "images/content/2014-02/20140212120724943181.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-10/104331.html";
+									var vTitle='【寒假视角】假期校园科学研究氛围依旧浓（组图）';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																						imgUrl[n] = "images/content/2014-02/20140208101106748283.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-02-07/104326.html";
+									var vTitle='【寒假视角】校园安全和服务保障工作不停歇（组图）';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140129165124550242.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-29/104324.html";
+									var vTitle='学校举行2014年寒假留校学生新春联欢会';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140129174112765555.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-29/104323.html";
+									var vTitle='中外师生喜迎中国年';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140129164350760177.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-29/104322.html";
+									var vTitle='春节前夕校领导慰问学校在岗职工';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140127173513051258.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-28/104320.html";
+									var vTitle='我校组团赴北美招聘海外优秀人才';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140128111010646177.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-28/104321.html";
+									var vTitle='【寒假视角】学校组织留校学生开展系列活动喜迎新春';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140127162207982196.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-27/104318.html";
+									var vTitle='北京市教委领导看望慰问我校寒假留校学生';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140123180743081163.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-23/104316.html";
+									var vTitle='北京交通大学、罗彻斯特理工学院、威海市人民政府签署谅解合作备忘录';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																						imgUrl[n] = "images/content/2014-01/20140121164310090306.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-21/104314.html";
+									var vTitle='【寒假视角】国家能源主动配电网技术研发中心顺利召开第二届理事会';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140118164308877126.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-18/104312.html";
+									var vTitle='【寒假视角】我校承办北京市寒假留校学生送温暖、强能力活动';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140120111058237204.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-20/104313.html";
+									var vTitle='【寒假视角】研工部邀多部门与留校研究生座谈假期服务工作';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																						imgUrl[n] = "images/content/2014-01/20140116175853289747.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-16/104307.html";
+									var vTitle='教育部关工委主任田淑兰一行来校调研';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																						imgUrl[n] = "images/content/2014-01/20140114124510549161.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-14/104301.html";
+									var vTitle='2013年学校工作总结表彰暨2014年新春团拜会召开';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																								imgUrl[n] = "images/content/2014-01/20140113175203278322.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-13/104300.html";
+									var vTitle='北京交通大学官方微博获评2013年度教育系统十佳';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140110182418020307.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-10/104296.html";
+									var vTitle='学校召开统战人士迎新春座谈会';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2014-01/20140110155705138214.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/jiaoxuekeyan/2014-01-10/104295.html";
+									var vTitle='我校1项参加完成成果获国家技术发明二等奖';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																																																												imgUrl[n] = "images/content/2014-01/20140107153402678177.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2014-01-07/104279.html";
+									var vTitle='韩林飞教授被聘为北京市人民政府特约人员';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																																																																										imgUrl[n] = "images/content/2013-12/20131231183951873277.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2013-12-31/104253.html";
+									var vTitle='2013年学院工作交流大会召开';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2013-12/20131231120150376799.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/hezuojiaoliu/2013-12-31/104242.html";
+									var vTitle='宁滨一行赴昆明调研洽谈合作';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				imgUrl[n] = "images/content/2013-12/20131230121831488617.jpg";
+									imgLink[n] = "http://news.bjtu.edu.cn/zongheyaowen/2013-12-30/104233.html";
+									var vTitle='北京市委常委、教育工委书记苟仲文来校考察指导工作';
+									if (vTitle.length>18)
+									vTitle=vTitle.substring(0,15)+"...";
+									imgName[n] = vTitle;
+									n++;
+																																				
+											var texts = "";
+											var links = "";
+											var pics = "";
+											var count=1;
+											for(var h=1; h<n; h++) {
+											if (count>6)
+											break;
+											if ((imgUrl[h] !="") && (imgLink[h] !="") && (imgUrl[h].indexOf(".jpg") > 0)){
+												if (imgName[h].length > 16)
+												imgName[h] = imgName[h].substring(0, 16) + "...";
+												texts += imgName[h] + "|";
+												links += imgLink[h] + "|";
+												pics += imgUrl[h] + "|";
+												count++;
+												}
+											}
+											texts = texts.substring(0, texts.length-1);
+											links = links.substring(0, links.length-1);
+											pics = pics.substring(0, pics.length-1);
+											var focus_width=226
+											var focus_height=126
+											var text_height=20
+											var swf_height = focus_height+text_height
+											document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="'+ focus_width +'" height="'+ swf_height +'">');
+											
+							document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="images/siyuanblue/focus.swf"><param name="quality" value="high"> <param name="bgcolor" value= "#ebebeb">');				
+											document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+											
+											document.write('<param name="FlashVars" value="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'">');
+											
+											document.write('<embed src="images/siyuanblue/focus.swf" wmode="opaque" FlashVars="pics='+pics+'&links='+links+'&texts='+texts+'&borderwidth='+focus_width+'&borderheight='+focus_height+'&textheight='+text_height+'" menu="false" bgcolor="#ebebeb" quality="high" width="'+ focus_width +'" height="'+ swf_height +'" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>'); 
+							</SCRIPT>
+						</div>
+						<ul>
+							<marquee direction="up" onmouseout="this.start();" onmouseover="this.stop();" scrollamount="2" loop="-1" style="width:395px; height: 130px; *width:410px;">
+													<li>
+							<a href="http://news.bjtu.edu.cn/zongheyaowen/2014-02-28/104363.html" title="学校召开党的群众路线教育实践活动总结大会" target="_blank">            学校召开党的群众路线教育实践活动总结大会 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/jiaoxuekeyan/2014-02-28/104361.html" title="我校2主持1参加完成成果获教育部高校科学研究优秀成果奖（科学技术）" target="_blank">            我校2主持1参加完成成果获教育部高校科学研究优秀成果奖（科学... 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/jiaoxuekeyan/2014-02-28/104362.html" title="我校4主持8参加成果获北京市科学技术奖" target="_blank">            我校4主持8参加成果获北京市科学技术奖 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/zongheyaowen/2014-02-27/104360.html" title="校领导深入一线指导开学工作" target="_blank">            校领导深入一线指导开学工作 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/zongheyaowen/2014-02-27/104359.html" title="教育部学校体育的改革与发展座谈会在我校举行" target="_blank">            教育部学校体育的改革与发展座谈会在我校举行 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/hezuojiaoliu/2014-02-27/104358.html" title="宁滨会见美国圣托马斯大学教务长陈思齐博士一行" target="_blank">            宁滨会见美国圣托马斯大学教务长陈思齐博士一行 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/zongheyaowen/2014-02-26/104349.html" title="校党委十届三次全会举行" target="_blank">            校党委十届三次全会举行 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/jiaoxuekeyan/2014-02-25/104343.html" title="我校三门课程入选国家级精品资源共享课" target="_blank">            我校三门课程入选国家级精品资源共享课 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/hezuojiaoliu/2014-02-25/104342.html" title="宁滨会见英国信号工程师协会会长David Weedon一行" target="_blank">            宁滨会见英国信号工程师协会会长David Weedon一行 
+    </a>
+						</li>
+												<li>
+							<a href="http://news.bjtu.edu.cn/zongheyaowen/2014-02-25/104340.html" title="宁滨等出席欧美同学会中国留学人员联谊会第七届理事会" target="_blank">            宁滨等出席欧美同学会中国留学人员联谊会第七届理事会 
+    </a>
+						</li>
+													</marquee>
+						</ul>
+					</div>
+				<!--  新闻结束  --></div>
+				<div class="right02">
+					<div class="imp">
+						<h3>重要提示&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="STYLE1">&nbsp;&nbsp; <a href="zyts/index.htm">>>更多</a></span></h3>
+						<ul>
+							
+													<li>
+							<a href="http://jgrsc.bjtu.edu.cn/job/shownews.asp?ID=359" title="北京交通大学2014年师资补充招聘启事" target="_blank">            北京交通大学2014年师资补充招聘启事 
+    </a>
+						</li>
+												<li>
+							<a href="http://youth.bjtu.edu.cn/test.php/Index/checkArticle?newid=197" title="北京交通大学大型原创话剧《茅以升》演员招募" target="_blank">            北京交通大学大型原创话剧《茅以升》演员招募 
+    </a>
+						</li>
+												<li>
+							<a href="http://www.bjtupx.com/news/651.html" title="2014年会计取证班火热报名中" target="_blank">            2014年会计取证班火热报名中 
+    </a>
+						</li>
+												<li>
+							<a href="http://www.bjtu-hedu.com/2013/0923/301.html" title="2014年免TOEFL\GRE赴美国读研招生简章" target="_blank">            2014年免TOEFL\GRE赴美国读研招生... 
+    </a>
+						</li>
+												<li>
+							<a href="http://vote.jyb.cn/vote2013km.php" title="2013年度全国教书育人楷模推选" target="_blank">            2013年度全国教书育人楷模推选 
+    </a>
+						</li>
+													
+						</ul>
+					<!--   重要提示结束  --></div>
+					
+					<div class="tab_d01"><!-- 科技动态 tab切换 -->
+						  <script type=text/javascript>
+							function setTab01Syn ( i )
+							{
+								selectTab01Syn(i);
+							}
+							
+							function selectTab01Syn ( i )
+							{
+								switch(i){
+									case 1:
+									document.getElementById("TabTab01Con1").style.display="block";
+									document.getElementById("TabTab01Con2").style.display="none";
+									document.getElementById("font1").style.color="#fff";
+									document.getElementById("font2").style.color="#7c7c7c";
+									break;
+									case 2:
+									document.getElementById("TabTab01Con1").style.display="none";
+									document.getElementById("TabTab01Con2").style.display="block";
+									document.getElementById("font1").style.color="#7c7c7c";
+									document.getElementById("font2").style.color="#fff";
+									break;
+									
+								}
+							}
+						
+						</script>
+						<div class="tab">
+							<div id="bg" class="xixi1">
+								<div id="font1" class="tab1" onMouseOver="setTab01Syn(1);document.getElementById('bg').className='xixi1'">科技动态</div>
+								<div id="font2" class="tab2" onMouseOver="setTab01Syn(2);document.getElementById('bg').className='xixi2'">交大热点</div>		
+							</div>
+							<div id=TabTab01Con1>
+								<div class="tab_list2">
+									<div class="list_02">
+										<ul>
+										  									<li>
+										<a href="http://kjc.bjtu.edu.cn/jsp/notice/noticeDetailUserView.jsp?id=2403" title="北京交通大学专利代理机构遴选公告" target="_blank">            北京交通大学专利代理机构遴选公告 
+    </a>
+									</li>
+																		<li>
+										<a href="http://kjc.bjtu.edu.cn/jsp/notice/noticeDetailUserView.jsp?id=2320" title="北京交通大学1项目获评中国高等学校十大科技进展" target="_blank">            北京交通大学1项目获评中国高等学校十大科技进... 
+    </a>
+									</li>
+																		<li>
+										<a href="http://kjc.bjtu.edu.cn/jsp/notice/noticeDetailUserView.jsp?id=2211" title=" IEEE 2013微波、天线、传播和电磁兼容技术国际学术会议会议征文" target="_blank">             IEEE 2013微波、天线、传播和电磁兼... 
+    </a>
+									</li>
+																		<li>
+										<a href="http://news.bjtu.edu.cn/jiaoxuekeyan/2013-04-08/102193.html" title="我校4项成果获得教育部第六届高校科学研究优秀成果奖（人文社会科学）" target="_blank">            我校4项成果获得教育部第六届高校科学研究优秀... 
+    </a>
+									</li>
+																		<li>
+										<a href="http://kjc.bjtu.edu.cn/jsp/notice/noticeDetailUserView.jsp?id=2144" title="我校3名教师荣获2012年度茅以升铁道科学技术奖、1名教师荣获茅以升北京青年科技奖" target="_blank">            我校3名教师荣获2012年度茅以升铁道科学技... 
+    </a>
+									</li>
+																			</ul>
+									</div>
+								</div>
+							</div>
+				
+							<div id=TabTab01Con2 style="display:none">
+								 <div clss="tab_list2">
+								   <div class="list_02">
+										<ul>
+																		<li>
+										<a href="http://icir.bjtu.edu.cn/ieis2014/ " title="国际会议：IEIS 2014" target="_blank">            国际会议：IEIS 2014 
+    </a>
+									</li>
+																		<li>
+										<a href="http://icsp.bjtu.edu.cn" title="国际会议：icsp2014" target="_blank">            国际会议：icsp2014 
+    </a>
+									</li>
+																		<li>
+										<a href="http://ce2014.bjtu.edu.cn" title="国际会议：CE2014" target="_blank">            国际会议：CE2014 
+    </a>
+									</li>
+																		<li>
+										<a href="http://icir.bjtu.edu.cn/icsssm2014/" title="国际会议：ICSSSM2014" target="_blank">            国际会议：ICSSSM2014 
+    </a>
+									</li>
+																		<li>
+										<a href="http://icir.bjtu.edu.cn/liss2014/ " title="国际会议：LISS2014" target="_blank">            国际会议：LISS2014 
+    </a>
+									</li>
+																			</ul>
+								   </div>
+								 </div>
+							</div>
+							
+						</div>
+					<!--    动态end//Tab切换end    --></div>
+					
+				</div>
+			<!--  右侧结束  --></div>
+		</div>
+		
+<div class="footer">
+		<p>地址：北京市海淀区上园村3号北京交通大学信息中心　邮编：100044　
+		<p>北京交通大学信息中心保留网站所有权利 未经允许不得复制、镜像</p> 
+		<p>京公网安备：110402430059 号  <a href="http://www.miitbeian.gov.cn/ ">京ICP备12010520号-2</a></p>	</div>	</div>
+<script src="http://202.112.154.32/cms/web/writeLog.jsp?channelID=4"></script>
+
+</body></html>
